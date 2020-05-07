@@ -1,0 +1,19 @@
+#findadonor {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.9))), url("../../../assets/img/img3.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../../../assets/img/img3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#findadonor h1::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 80px;
+  background: goldenrod;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+/*# sourceMappingURL=FindADonorPage.css.map */

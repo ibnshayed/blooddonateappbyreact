@@ -1,0 +1,37 @@
+#home_page_banner{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.9)), url("../../../assets/img/img2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    .row{
+        position: relative;
+        margin: 0 auto;
+        top: 220px;
+    }
+    .display-1{
+        letter-spacing: 1rem;
+    }
+    .display-4{
+        letter-spacing: .7rem;
+    }
+
+    .btn{
+        letter-spacing: .2rem;
+        word-spacing: .5rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+    #home_page_banner {
+        .display-1 {
+            font-size: 4rem;
+        }
+
+        .display-4 {
+            font-size: 2.2rem;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+#contactus{
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.9)), url("../../../assets/img/img5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;  
+
+
+  h1::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width:80px;
+    background: goldenrod;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+}
