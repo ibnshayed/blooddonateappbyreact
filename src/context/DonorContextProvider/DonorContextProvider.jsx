@@ -9,7 +9,7 @@ export default ({children}) => {
 
     const getAllDonors = async () =>{
       try {
-          const response = await axios.get("http://localhost:8080/api/donor/all");
+          const response = await axios.get("https://eis-blooddonateappbyspringboot.herokuapp.com/api/donor/all");
           setDonors(response.data);
       }catch (error) {
           console.log(error);
@@ -17,7 +17,7 @@ export default ({children}) => {
     };
     const getDonorById = async (id) =>{
         try {
-            const response = await axios.get(`http://localhost:8080/api/donor/${id}`);
+            const response = await axios.get(`https://eis-blooddonateappbyspringboot.herokuapp.com/api/donor/${id}`);
             setDonor(response.data);
             console.log(response.data);
         }catch (error) {
@@ -27,7 +27,7 @@ export default ({children}) => {
 
     const deleteDonorById = async (id) =>{
         try {
-            await axios.delete(`http://localhost:8080/api/donor/${id}`);
+            await axios.delete(`https://eis-blooddonateappbyspringboot.herokuapp.com/api/donor/${id}`);
             setDonors(donors.filter(e => e.id !== id));
         }catch (error) {
             console.log(error);
@@ -36,7 +36,7 @@ export default ({children}) => {
 
     const saveOrUpdateDonor = async (data) =>{
         try {
-            const response = await axios.post(`http://localhost:8080/api/donor/`,data);
+            const response = await axios.post(`https://eis-blooddonateappbyspringboot.herokuapp.com/api/donor/`,data);
         } catch (error) {
             window.alert("Donor is not created");
             console.log(error);
